@@ -139,6 +139,105 @@
       "reponses_fausses": ["Désert d'arabie", "Le Kalahari", "Le Gobi"],
       "reponse_correcte": "Le Sahara",
       "indice": "chaud"
+    },
+    {
+      "theme": "Géographie",
+      "question": "Quel est le pays le plus peuplé du monde ?",
+      "reponses_fausses": [
+        "La Chine",
+        "La Russie",
+        "Les États-Unis"
+      ],
+      "reponse_correcte": "L'Inde",
+      "indice": "Un milliard"
+    },
+    {
+      "theme": "Histoire",
+      "question": "Quel est le premier homme à avoir marché sur la Lune ?",
+      "reponses_fausses": [
+        "Zinédine Zidane",
+        "Buzz Aldrin",
+        "Michael Collins"
+      ],
+      "reponse_correcte": "Neil Armstrong",
+      "indice": "1969"
+    },
+    {
+      "theme": "Sciences",
+      "question": "Quel est le nom de l'élément chimique dont le symbole est Au ?",
+      "reponses_fausses": [
+        "Or",
+        "Argent",
+        "Palladium"
+      ],
+      "reponse_correcte": "Or",
+      "indice": "Chimie"
+    },
+    {
+      "theme": "Divertissement",
+      "question": "Quel est le titre du premier album des Beatles ?",
+      "reponses_fausses": [
+        "Sing With Me",
+        "With The Beatles",
+        "Hard Days Night"
+      ],
+      "reponse_correcte": "Please Please Me",
+      "indice": "Musique"
+    },
+    {
+      "theme": "Sport",
+      "question": "Quel est le sport le plus populaire au monde ?",
+      "reponses_fausses": [
+        "Baseball",
+        "Criquet",
+        "Basket-ball"
+      ],
+      "reponse_correcte": "Football",
+      "indice": "2 milliards de fans"
+    },
+    {
+      "theme": "Géographie",
+      "question": "Quelle est la capitale de la France ?",
+      "reponses_fausses": [
+        "Marseille",
+        "Lyon",
+        "Nantes"
+      ],
+      "reponse_correcte": "Paris",
+      "indice": "Capitale"
+    },
+    {
+      "theme": "Géographie",
+      "question": "Quel est le plus haut sommet du monde ?",
+      "reponses_fausses": [
+        "L'Aconcagua",
+        "Le K2",
+        "Le Mont Blanc"
+      ],
+      "reponse_correcte": "Le Mont Everest",
+      "indice": "Montagnes"
+    },
+    {
+      "theme": "Géographie",
+      "question": "Quel est le pays le plus grand du monde ?",
+      "reponses_fausses": [
+        "Canada",
+        "Chine",
+        "L'Antarctique"
+      ],
+      "reponse_correcte": "Russie",
+      "indice": "Grand pays"
+    },
+    {
+      "theme": "Histoire",
+      "question": "Quelle est la guerre la plus meurtrière de l'histoire ?",
+      "reponses_fausses": [
+        "La guerre du Vietnam",
+        "La Première Guerre mondiale",
+        "La Guerre du Golfe"
+      ],
+      "reponse_correcte": "La Seconde Guerre mondiale",
+      "indice": "60 à 85 millions de morts"
     }
   ]
 }
