@@ -102,14 +102,14 @@
       "theme": "Divertissement",
       "question": "Quelle série animée met en scène un savant scientifique alcoolique et son petit-fils aventurier ?",
       "reponses_fausses": ["The Simpsons", "Family Guy", "South Park"],
-      "reponse_correcte": "Rick and Morty",
+      "reponse_correcte": "Rick et Morty",
       "indice": "savant"
     },
     {
       "theme": "Sciences",
       "question": "Quelle force attire tous les objets vers le centre de la Terre ?",
       "reponses_fausses": ["Force centrifuge", "Force électromagnétique", "Force nucléaire"],
-      "reponse_correcte": "Gravité",
+      "reponse_correcte": "Force gravitationnelle",
       "indice": "Terre"
     },
     {
