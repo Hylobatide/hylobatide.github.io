@@ -108,8 +108,8 @@
     {
       "theme": "Sciences",
       "question": "Quelle force attire tous les objets vers le centre de la Terre ?",
-      "reponses_fausses": ["Force centrifuge", "Force électromagnétique", "Force nucléaire"],
-      "reponse_correcte": "Force gravitationnelle",
+      "reponses_fausses": ["centrifuge", "électromagnétique", "nucléaire"],
+      "reponse_correcte": "gravitationnelle",
       "indice": "Terre"
     },
     {
