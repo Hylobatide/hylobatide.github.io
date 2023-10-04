@@ -2,242 +2,703 @@
   "questions": [
     {
       "theme": "Géographie",
-      "question": "Quelle est la capitale de l'Espagne ?",
-      "reponses_fausses": ["Lisbonne", "Barcelone", "Rome"],
-      "reponse_correcte": "Madrid",
-      "indice": "ville"
+      "question": "Quel est le plus long fleuve du monde?",
+      "reponses_fausses": ["Mississippi", "Danube", "Yukon"],
+      "reponse_correcte": "Amazone",
+      "indice": "Fleuve"
     },
     {
       "theme": "Géographie",
-      "question": "Quel pays est connu comme le pays du soleil levant ?",
-      "reponses_fausses": ["Chine", "Corée du Sud", "Inde"],
-      "reponse_correcte": "Japon",
-      "indice": "lever"
+      "question": "Quelle est la capitale de l'Australie?",
+      "reponses_fausses": ["Sydney", "Melbourne", "Brisbane"],
+      "reponse_correcte": "Canberra",
+      "indice": "Capitale"
     },
     {
       "theme": "Histoire",
-      "question": "En quelle année a eu lieu la Révolution française ?",
-      "reponses_fausses": ["1804", "1848", "1815"],
-      "reponse_correcte": "1789",
-      "indice": "Bastille"
+      "question": "Qui était le premier président des États-Unis?",
+      "reponses_fausses": ["Thomas Jefferson", "Benjamin Franklin", "John Adams"],
+      "reponse_correcte": "George Washington",
+      "indice": "Président"
     },
     {
       "theme": "Histoire",
-      "question": "Quel événement a marqué la fin de la Seconde Guerre mondiale en Europe ?",
-      "reponses_fausses": ["Attaque de Pearl Harbor", "Bataille de Stalingrad", "Bombardement de Nagasaki"],
-      "reponse_correcte": "Capitulation de l'Allemagne",
-      "indice": "Europe"
+      "question": "En quelle année a eu lieu la chute du mur de Berlin?",
+      "reponses_fausses": ["1979", "1985", "1991"],
+      "reponse_correcte": "1989",
+      "indice": "Liberté"
     },
     {
       "theme": "Sciences",
-      "question": "Quel est le plus petit élément chimique ?",
-      "reponses_fausses": ["Oxygène", "Carbone", "Azote"],
-      "reponse_correcte": "Hydrogène",
-      "indice": "élément"
+      "question": "Quel est l'élément chimique représenté par le symbole 'Au'?",
+      "reponses_fausses": ["Argent", "Aluminium", "Azote"],
+      "reponse_correcte": "Or",
+      "indice": "Élément"
     },
     {
       "theme": "Sciences",
-      "question": "Quelle planète est souvent appelée la planète rouge ?",
-      "reponses_fausses": ["Vénus", "Jupiter", "Saturne"],
-      "reponse_correcte": "Mars",
-      "indice": "rouge"
+      "question": "En quelle année l’ère de la conquête spatiale a-t-elle commencé ?",
+      "reponses_fausses": ["1913", "1932", "1974"],
+      "reponse_correcte": "1957",
+      "indice": "Planète"
     },
     {
       "theme": "Divertissement",
-      "question": "Quel acteur incarne Iron Man dans le Marvel Cinematic Universe ?",
-      "reponses_fausses": ["Chris Evans", "Chris Hemsworth", "Mark Ruffalo"],
-      "reponse_correcte": "Robert Downey Jr.",
-      "indice": "Iron"
+      "question": "Qui a écrit 'Game of Thrones'?",
+      "reponses_fausses": ["J.K. Rowling", "Tolkien", "Dan Brown"],
+      "reponse_correcte": "George R.R. Martin",
+      "indice": "Série"
     },
     {
       "theme": "Divertissement",
-      "question": "Quelle série télévisée met en scène des dragons et des marcheurs blancs ?",
-      "reponses_fausses": ["Breaking Bad", "Stranger Things", "Friends"],
-      "reponse_correcte": "Game of Thrones",
-      "indice": "trône"
+      "question": "Quel est le nom du bateau dans 'Pirates des Caraïbes'?",
+      "reponses_fausses": ["Queen Anne", "Black Widow", "Nina"],
+      "reponse_correcte": "Black Pearl",
+      "indice": "Pirates"
     },
     {
       "theme": "Sport",
-      "question": "Dans quel sport peut-on marquer un \"touchdown\" ?",
-      "reponses_fausses": ["Football (soccer)", "Rugby", "Basketball"],
-      "reponse_correcte": "Football américain",
-      "indice": "touchdown"
+      "question": "Dans quel sport utilise-t-on un 'putter'?",
+      "reponses_fausses": ["Tennis", "Cricket", "Baseball"],
+      "reponse_correcte": "Golf",
+      "indice": "Outil"
     },
     {
       "theme": "Sport",
-      "question": "Quelle équipe nationale a remporté la Coupe du Monde de football en 2018 ?",
+      "question": "Quelle nation a remporté la première Coupe du monde de football?",
+      "reponses_fausses": ["Angleterre", "Allemagne", "Italie"],
+      "reponse_correcte": "Uruguay",
+      "indice": "Football"
+    },
+    {
+      "theme": "Géographie",
+      "question": "Quel pays est le plus peuplé du monde?",
+      "reponses_fausses": ["États-Unis", "Inde", "Brésil"],
+      "reponse_correcte": "Chine",
+      "indice": "Peuples"
+    },
+    {
+      "theme": "Géographie",
+      "question": "Quelle mer borde la côte ouest de l'Italie?",
+      "reponses_fausses": ["Mer du Nord", "Mer Noire", "Mer Baltique"],
+      "reponse_correcte": "Mer Tyrrhénienne",
+      "indice": "Océan/Mer"
+    },
+    {
+      "theme": "Histoire",
+      "question": "Qui était le dieu grec du ciel et le père des dieux?",
+      "reponses_fausses": ["Hermès", "Hadès", "Poséidon"],
+      "reponse_correcte": "Zeus",
+      "indice": "Dieu"
+    },
+    {
+      "theme": "Histoire",
+      "question": "Quelle reine était mariée à Louis XVI?",
+      "reponses_fausses": ["Marie Curie", "Catherine de Médicis", "Victoria"],
+      "reponse_correcte": "Marie-Antoinette",
+      "indice": "Roi/Reine"
+    },
+    {
+      "theme": "Sciences",
+      "question": "Quel gaz est le plus abondant dans l'atmosphère terrestre?",
+      "reponses_fausses": ["Oxygène", "Dioxyde de carbone", "Hydrogène"],
+      "reponse_correcte": "Azote",
+      "indice": "Atmosphère"
+    },
+    {
+      "theme": "Sciences",
+      "question": "Quelle est la vitesse de la lumière dans le vide (en 10^6m/s)?",
+      "reponses_fausses": ["280", "250", "200"],
+      "reponse_correcte": "300",
+      "indice": "Vitesse"
+    },
+    {
+      "theme": "Divertissement",
+      "question": "Qui a réalisé le film 'Inception'?",
+      "reponses_fausses": ["Steven Spielberg", "Quentin Tarantino", "James Cameron"],
+      "reponse_correcte": "Christopher Nolan",
+      "indice": "Rêve"
+    },
+    {
+      "theme": "Divertissement",
+      "question": "Qui chante 'Like a Virgin'?",
+      "reponses_fausses": ["Cher", "Britney Spears", "Céline Dion"],
+      "reponse_correcte": "Madonna",
+      "indice": "Queen"
+    },
+    {
+      "theme": "Sport",
+      "question": "Quelle équipe a remporté la Coupe du monde de football en 2018?",
       "reponses_fausses": ["Brésil", "Allemagne", "Argentine"],
       "reponse_correcte": "France",
-      "indice": "champion"
-    },
-    {
-      "theme": "Sciences",
-      "question": "Quel est le processus par lequel les plantes fabriquent leur propre nourriture en utilisant la lumière du soleil ?",
-      "reponses_fausses": ["Hydratation", "Respiration", "Fermentation"],
-      "reponse_correcte": "Photosynthèse",
-      "indice": "soleil"
-    },
-    {
-      "theme": "Géographie",
-      "question": "Quel est le plus grand océan de la planète ?",
-      "reponses_fausses": ["Océan Atlantique", "Océan Indien", "Mer Méditerranée"],
-      "reponse_correcte": "Océan Pacifique",
-      "indice": "grand"
-    },
-    {
-      "theme": "Histoire",
-      "question": "Quel célèbre explorateur italien a découvert l'Amérique en 1492 ?",
-      "reponses_fausses": ["Vasco de Gama", "Ferdinand Magellan", "Marco Polo"],
-      "reponse_correcte": "Christophe Colomb",
-      "indice": "1492"
+      "indice": "Football"
     },
     {
       "theme": "Sport",
-      "question": "Quel sport utilise une balle blanche et des clubs pour frapper la balle dans un trou en moins de coups possible ?",
-      "reponses_fausses": ["Tennis", "Basketball", "Football"],
-      "reponse_correcte": "Golf",
-      "indice": "trou"
-    },
-    {
-      "theme": "Divertissement",
-      "question": "Quelle série animée met en scène un savant scientifique alcoolique et son petit-fils aventurier ?",
-      "reponses_fausses": ["The Simpsons", "Family Guy", "South Park"],
-      "reponse_correcte": "Rick et Morty",
-      "indice": "savant"
-    },
-    {
-      "theme": "Sciences",
-      "question": "Quelle force attire tous les objets vers le centre de la Terre ?",
-      "reponses_fausses": ["centrifuge", "électromagnétique", "nucléaire"],
-      "reponse_correcte": "gravitationnelle",
-      "indice": "Terre"
-    },
-    {
-      "theme": "Histoire",
-      "question": "Quel empereur romain a été assassiné par des membres de sa propre garde en l'an 41 ?",
-      "reponses_fausses": ["Auguste", "Néron", "Jules César"],
-      "reponse_correcte": "Caligula",
-      "indice": "empereur"
-    },
-    {
-      "theme": "Sport",
-      "question": "Quel sport nautique consiste à glisser sur l'eau en utilisant une planche sous le vent ?",
-      "reponses_fausses": ["Surf", "Canoë-kayak", "Plongée sous-marine"],
-      "reponse_correcte": "Planche à voile",
-      "indice": "vent"
-    },
-    {
-      "theme": "Divertissement",
-      "question": "Quelle actrice a interprété le rôle de Katniss Everdeen dans la série de films \"Hunger Games\" ?",
-      "reponses_fausses": ["Emma Watson", "Jennifer Aniston", "Scarlett Johansson"],
-      "reponse_correcte": "Jennifer Lawrence",
-      "indice": "Katniss"
+      "question": "Dans quel sport fait-on un 'slam dunk'?",
+      "reponses_fausses": ["Football", "Baseball", "Hockey"],
+      "reponse_correcte": "Basketball",
+      "indice": "Collectif"
     },
     {
       "theme": "Géographie",
-      "question": "Quel est le plus grand désert chaud du monde ?",
-      "reponses_fausses": ["Désert d'arabie", "Le Kalahari", "Le Gobi"],
-      "reponse_correcte": "Le Sahara",
-      "indice": "chaud"
-    },
-    {
-      "theme": "Géographie",
-      "question": "Quel est le pays le plus peuplé du monde ?",
-      "reponses_fausses": [
-        "La Chine",
-        "La Russie",
-        "Les États-Unis"
-      ],
-      "reponse_correcte": "L'Inde",
-      "indice": "Un milliard"
-    },
-    {
-      "theme": "Histoire",
-      "question": "Quel est le premier homme à avoir marché sur la Lune ?",
-      "reponses_fausses": [
-        "Zinédine Zidane",
-        "Buzz Aldrin",
-        "Michael Collins"
-      ],
-      "reponse_correcte": "Neil Armstrong",
-      "indice": "1969"
-    },
-    {
-      "theme": "Sciences",
-      "question": "Quel est le nom de l'élément chimique dont le symbole est Au ?",
-      "reponses_fausses": [
-        "Aurore",
-        "Argent",
-        "Palladium"
-      ],
-      "reponse_correcte": "Or",
-      "indice": "Chimie"
-    },
-    {
-      "theme": "Divertissement",
-      "question": "Quel est le titre du premier album des Beatles ?",
-      "reponses_fausses": [
-        "Sing With Me",
-        "With The Beatles",
-        "Hard Days Night"
-      ],
-      "reponse_correcte": "Please Please Me",
-      "indice": "Musique"
-    },
-    {
-      "theme": "Sport",
-      "question": "Quel est le sport le plus populaire au monde ?",
-      "reponses_fausses": [
-        "Baseball",
-        "Criquet",
-        "Basket-ball"
-      ],
-      "reponse_correcte": "Football",
-      "indice": "2 milliards de fans"
-    },
-    {
-      "theme": "Géographie",
-      "question": "Quelle est la capitale de la France ?",
-      "reponses_fausses": [
-        "Marseille",
-        "Lyon",
-        "Nantes"
-      ],
-      "reponse_correcte": "Paris",
+      "question": "Quelle est la capitale de la Suède?",
+      "reponses_fausses": ["Helsinki", "Copenhague", "Oslo"],
+      "reponse_correcte": "Stockholm",
       "indice": "Capitale"
     },
     {
       "theme": "Géographie",
-      "question": "Quel est le plus haut sommet du monde ?",
-      "reponses_fausses": [
-        "L'Aconcagua",
-        "Le K2",
-        "Le Mont Blanc"
-      ],
-      "reponse_correcte": "Le Mont Everest",
-      "indice": "Montagnes"
-    },
-    {
-      "theme": "Géographie",
-      "question": "Quel est le pays le plus grand du monde ?",
-      "reponses_fausses": [
-        "Canada",
-        "Chine",
-        "L'Antarctique"
-      ],
-      "reponse_correcte": "Russie",
-      "indice": "Grand pays"
+      "question": "Quel est le plus grand désert du monde?",
+      "reponses_fausses": ["Sahara", "Gobi", "Atacama"],
+      "reponse_correcte": "Antarctique",
+      "indice": "Désert"
     },
     {
       "theme": "Histoire",
-      "question": "Quelle est la guerre la plus meurtrière de l'histoire ?",
-      "reponses_fausses": [
-        "La guerre du Vietnam",
-        "La Première Guerre mondiale",
-        "La Guerre du Golfe"
-      ],
-      "reponse_correcte": "La Seconde Guerre mondiale",
-      "indice": "60 à 85 millions de morts"
+      "question": "Quel empereur français a été défaite à Waterloo?",
+      "reponses_fausses": ["Louis XIV", "Charlemagne", "Henri IV"],
+      "reponse_correcte": "Napoléon Bonaparte",
+      "indice": "Corse"
+    },
+    {
+      "theme": "Histoire",
+      "question": "Quel roi d'Angleterre a signé la Magna Carta?",
+      "reponses_fausses": ["Henry VIII", "Edward III", "Richard Coeur de Lion"],
+      "reponse_correcte": "Jean sans Terre",
+      "indice": "Roi"
+    },
+    {
+      "theme": "Sciences",
+      "question": "Quelle partie de la cellule est responsable de la production d'énergie?",
+      "reponses_fausses": ["Noyau", "Ribosome", "Endoplasmic Reticulum"],
+      "reponse_correcte": "Mitochondrie",
+      "indice": "Énergie"
+    },
+    {
+      "theme": "Sciences",
+      "question": "Quel élément a le symbole chimique 'Na'?",
+      "reponses_fausses": ["Néon", "Azote", "Argon"],
+      "reponse_correcte": "Sodium",
+      "indice": "Sel"
+    },
+    {
+      "theme": "Divertissement",
+      "question": "Qui est l'auteur de '1984'?",
+      "reponses_fausses": ["Aldous Huxley", "J.D. Salinger", "Mark Twain"],
+      "reponse_correcte": "George Orwell",
+      "indice": "Big Brother"
+    },
+    {
+      "theme": "Divertissement",
+      "question": "Dans quel film pouvez-vous entendre la phrase, 'La vie, c'est comme une boîte de chocolats'?",
+      "reponses_fausses": ["Pretty Woman", "Dead Poets Society", "Titanic"],
+      "reponse_correcte": "Forrest Gump",
+      "indice": "Course"
+    },
+    {
+      "theme": "Sport",
+      "question": "Quelle nation a remporté la première Coupe du monde de rugby?",
+      "reponses_fausses": ["Angleterre", "Afrique du Sud", "Australie"],
+      "reponse_correcte": "Nouvelle-Zélande",
+      "indice": "Rugby"
+    },
+    {
+      "theme": "Sport",
+      "question": "Quel athlète détient le record du monde du 100 mètres?",
+      "reponses_fausses": ["Carl Lewis", "Michael Johnson", "Tyson Gay"],
+      "reponse_correcte": "Usain Bolt",
+      "indice": "Course"
+    },
+    {
+      "theme": "Géographie",
+      "question": "Quel est le plus petit pays du monde en termes de superficie?",
+      "reponses_fausses": ["Monaco", "Saint-Marin", "Liechtenstein"],
+      "reponse_correcte": "Vatican",
+      "indice": "Pays"
+    },
+    {
+      "theme": "Géographie",
+      "question": "Quelle est la montagne la plus haute du monde?",
+      "reponses_fausses": ["K2", "Mont Blanc", "Kilimandjaro"],
+      "reponse_correcte": "Mont Everest",
+      "indice": "Sommet"
+    },
+    {
+      "theme": "Histoire",
+      "question": "Qui est l'inventeur de la première ampoule électrique?",
+      "reponses_fausses": ["Nikola Tesla", "Isaac Newton", "Albert Einstein"],
+      "reponse_correcte": "Thomas Edison",
+      "indice": "Lumière"
+    },
+    {
+      "theme": "Histoire",
+      "question": "Dans quelle ville a eu lieu la révolution bolchevique?",
+      "reponses_fausses": ["Moscou", "Kiev", "Warsaw"],
+      "reponse_correcte": "Saint-Pétersbourg",
+      "indice": "Révolution"
+    },
+    {
+      "theme": "Sciences",
+      "question": "Quelle est la distance moyenne entre la Terre et la Lune en milliers de kilomètres?",
+      "reponses_fausses": ["150", "545", "450"],
+      "reponse_correcte": "385",
+      "indice": "Orbite"
+    },
+    {
+      "theme": "Sciences",
+      "question": "De quoi sont composées les étoiles?",
+      "reponses_fausses": ["Oxygène et Azote", "Hydrogène et Oxygène", "Carbone et Azote"],
+      "reponse_correcte": "Hydrogène et Hélium",
+      "indice": "Fusion"
+    },
+    {
+      "theme": "Divertissement",
+      "question": "Quel acteur joue Tony Stark dans 'Iron Man'?",
+      "reponses_fausses": ["Chris Hemsworth", "Mark Ruffalo", "Chris Evans"],
+      "reponse_correcte": "Robert Downey Jr.",
+      "indice": "Super Héro"
+    },
+    {
+      "theme": "Divertissement",
+      "question": "Dans quel jeu vidéo doit-on survivre en construisant des structures?",
+      "reponses_fausses": ["Call of Duty", "World of Warcraft", "Counter-Strike"],
+      "reponse_correcte": "Minecraft",
+      "indice": "Jeux vidéo"
+    },
+    {
+      "theme": "Sport",
+      "question": "Dans quelle ville se sont déroulés les Jeux olympiques d'été de 2008?",
+      "reponses_fausses": ["Londres", "Sydney", "Atlanta"],
+      "reponse_correcte": "Pékin",
+      "indice": "Olympique"
+    },
+    {
+      "theme": "Sport",
+      "question": "Quel pays a remporté le plus de Coupes du monde de football féminin?",
+      "reponses_fausses": ["Allemagne", "Norvège", "Suède"],
+      "reponse_correcte": "États-Unis",
+      "indice": "Football"
+    },
+    {
+      "theme": "Géographie",
+      "question": "Quel est le fleuve le plus petit du monde?",
+      "reponses_fausses": ["Río Los Patos", "Nautley River", "Link"],
+      "reponse_correcte": "Le D",
+      "indice": "Fleuve"
+    },
+    {
+      "theme": "Histoire",
+      "question": "Quel pharaon égyptien était le mari de Néfertiti?",
+      "reponses_fausses": ["Ramsès II", "Khéops", "Cléopâtre"],
+      "reponse_correcte": "Akhenaton",
+      "indice": "Pyramide"
+    },
+    {
+      "theme": "Sciences",
+      "question": "Quelle planète est surnommée la 'planète rouge'?",
+      "reponses_fausses": ["Vénus", "Jupiter", "Saturne"],
+      "reponse_correcte": "Mars",
+      "indice": "Fer"
+    },
+    {
+      "theme": "Divertissement",
+      "question": "Qui est l'auteur de la série 'Le Trône de fer'?",
+      "reponses_fausses": ["J.K. Rowling", "Tolkien", "Dan Brown"],
+      "reponse_correcte": "George R.R. Martin",
+      "indice": "Série"
+    },
+    {
+      "theme": "Sport",
+      "question": "Quel est le sport national du Japon?",
+      "reponses_fausses": ["Football", "Baseball", "Kendo"],
+      "reponse_correcte": "Sumo",
+      "indice": "Asie"
+    },
+    {
+      "theme": "Géographie",
+      "question": "Dans quel pays peut-on visiter la ville de Petra?",
+      "reponses_fausses": ["Égypte", "Israël", "Liban"],
+      "reponse_correcte": "Jordanie",
+      "indice": "Pays"
+    },
+    {
+      "theme": "Histoire",
+      "question": "Quel peintre a réalisé 'La Joconde'?",
+      "reponses_fausses": ["Michel-Ange", "Raphaël", "Van Gogh"],
+      "reponse_correcte": "Léonard de Vinci",
+      "indice": "Louvre"
+    },
+    {
+      "theme": "Sciences",
+      "question": "Quel est le nom des dents sur le devant de la denture humaine ?",
+      "reponses_fausses": ["Les prémolaires", "Les molaires", "Les canines"],
+      "reponse_correcte": "Les incisives",
+      "indice": "Corps humain"
+    },
+    {
+      "theme": "Divertissement",
+      "question": "Quel est le premier film de la saga Star Wars à sortir en salle?",
+      "reponses_fausses": ["L'Empire contre-attaque", "La Revanche des Sith", "Le Retour du Jedi"],
+      "reponse_correcte": "Un nouvel espoir",
+      "indice": "Fiction"
+    },
+    {
+      "theme": "Sport",
+      "question": "Qui a remporté le Tour de France 7 fois, avant d'être disqualifié pour dopage?",
+      "reponses_fausses": ["Eddy Merckx", "Miguel Indurain", "Chris Froome"],
+      "reponse_correcte": "Lance Armstrong",
+      "indice": "Cyclisme"
+    },
+    {
+      "theme": "Géographie",
+      "question": "Quelle est la capitale du Canada?",
+      "reponses_fausses": ["Toronto", "Vancouver", "Montréal"],
+      "reponse_correcte": "Ottawa",
+      "indice": "Capitales"
+    },
+    {
+      "theme": "Histoire",
+      "question": "Quelle révolution a débuté en 1789?",
+      "reponses_fausses": ["Américaine", "Russe", "Industrielle"],
+      "reponse_correcte": "Française",
+      "indice": "Révolutions"
+    },
+    {
+      "theme": "Sciences",
+      "question": "Quel est le nom de l’hormone sexuelle masculine ?",
+      "reponses_fausses": ["Les stéroïdes", "La DHEA", "La somatotropine"],
+      "reponse_correcte": "La testostérone",
+      "indice": "Corps humain"
+    },
+    {
+      "theme": "Divertissement",
+      "question": "Quel personnage de 'Game of Thrones' est surnommé 'Le Régicide'?",
+      "reponses_fausses": ["Ned Stark", "Tyrion Lannister", "Jon Snow"],
+      "reponse_correcte": "Jaime Lannister",
+      "indice": "Séries TV"
+    },
+    {
+      "theme": "Sport",
+      "question": "Dans quel sport utilise-t-on un 'birdie'?",
+      "reponses_fausses": ["Golf", "Tennis", "Basketball"],
+      "reponse_correcte": "Badminton",
+      "indice": "Équipement"
+    },
+    {
+      "theme": "Géographie",
+      "question": "Quel est le désert le plus chaud du monde?",
+      "reponses_fausses": ["Sahara", "Gobi", "Kalahari"],
+      "reponse_correcte": "Désert de l'Atacama",
+      "indice": "Climat"
+    },
+    {
+      "theme": "Histoire",
+      "question": "Quel empereur japonais a annoncé la reddition du Japon en 1945?",
+      "reponses_fausses": ["Meiji", "Taisho", "Hirohito"],
+      "reponse_correcte": "Hirohito",
+      "indice": "Guerre"
+    },
+    {
+      "theme": "Sciences",
+      "question": "Quel est l'animal terrestre le plus rapide?",
+      "reponses_fausses": ["Lion", "Cheetah", "Antilope"],
+      "reponse_correcte": "Guépard",
+      "indice": "Animaux"
+    },
+    {
+      "theme": "Divertissement",
+      "question": "Qui a écrit 'Harry Potter'?",
+      "reponses_fausses": ["Stephenie Meyer", "Philip Pullman", "Rick Riordan"],
+      "reponse_correcte": "J.K. Rowling",
+      "indice": "Littérature"
+    },
+    {
+      "theme": "Sport",
+      "question": "Quel est le tournoi de tennis joué sur gazon?",
+      "reponses_fausses": ["Roland Garros", "US Open", "Open d'Australie"],
+      "reponse_correcte": "Wimbledon",
+      "indice": "Tournois"
+    },
+    {
+      "theme": "Géographie",
+      "question": "Quelle mer sépare l'Italie de la Croatie?",
+      "reponses_fausses": ["Mer Noire", "Mer Baltique", "Mer du Nord"],
+      "reponse_correcte": "Mer Adriatique",
+      "indice": "Mers"
+    },
+    {
+      "theme": "Histoire",
+      "question": "Connu sous le nom « Le Roi-Soleil » quel autre surnom était attribué au roi Louis XIV ?",
+      "reponses_fausses": ["Le génie", "Le beau", "Le Vaillant"],
+      "reponse_correcte": "Le grand",
+      "indice": "Roi"
+    },
+    {
+      "theme": "Sciences",
+      "question": "Quelle vitamine est produite par le corps humain lorsqu'il est exposé au soleil?",
+      "reponses_fausses": ["Vitamine C", "Vitamine A", "Vitamine E"],
+      "reponse_correcte": "Vitamine D",
+      "indice": "Vitamines"
+    },
+    {
+      "theme": "Divertissement",
+      "question": "Quel est le vrai nom de l'artiste connu sous le nom de Lady Gaga?",
+      "reponses_fausses": ["Katy Perry", "Madonna Ciccone", "Alicia Keys"],
+      "reponse_correcte": "Stefani Germanotta",
+      "indice": "Musique"
+    },
+    {
+      "theme": "Sport",
+      "question": "Combien y a-t-il de joueurs dans une équipe de basketball?",
+      "reponses_fausses": ["8", "6", "7"],
+      "reponse_correcte": "5",
+      "indice": "Règles"
+    },
+    {
+      "theme": "Géographie",
+      "question": "Dans quelle ville française se trouve la basilique du Sacré-Cœur?",
+      "reponses_fausses": ["Lyon", "Marseille", "Lille"],
+      "reponse_correcte": "Paris",
+      "indice": "Monuments"
+    },
+    {
+      "theme": "Histoire",
+      "question": "Quel pays a été le premier à accorder le droit de vote aux femmes?",
+      "reponses_fausses": ["États-Unis", "Royaume-Uni", "Allemagne"],
+      "reponse_correcte": "Nouvelle-Zélande",
+      "indice": "Droits"
+    },
+    {
+      "theme": "Sciences",
+      "question": "De quel atome provient le carbone 14 utilisé en datation?",
+      "reponses_fausses": ["Hélium", "Azote", "Oxygène"],
+      "reponse_correcte": "Azote",
+      "indice": "Radioactivité"
+    },
+    {
+      "theme": "Divertissement",
+      "question": "Quel est le prénom du pirate dans le dessin animé 'Peter Pan'?",
+      "reponses_fausses": ["John", "Edward", "William"],
+      "reponse_correcte": "James",
+      "indice": "Animation"
+    },
+    {
+      "theme": "Sport",
+      "question": "En quelle année les Jeux Olympiques modernes ont-ils été rétablis?",
+      "reponses_fausses": ["1869", "1889", "1901"],
+      "reponse_correcte": "1896",
+      "indice": "Olympiades"
+    },
+    {
+      "theme": "Géographie",
+      "question": "Quel est le plus grand pays du monde en superficie?",
+      "reponses_fausses": ["Canada", "États-Unis", "Australie"],
+      "reponse_correcte": "Russie",
+      "indice": "Superficie"
+    },
+    {
+      "theme": "Histoire",
+      "question": "Quelle reine d'Égypte a eu une liaison avec Jules César?",
+      "reponses_fausses": ["Néfertiti", "Hatchepsout", "Tiy"],
+      "reponse_correcte": "Cléopâtre",
+      "indice": "Antiquité"
+    },
+    {
+      "theme": "Sciences",
+      "question": "Quel est le gaz majoritairement responsable de l'effet de serre?",
+      "reponses_fausses": ["Oxygène", "Azote", "Méthane"],
+      "reponse_correcte": "Dioxyde de carbone",
+      "indice": "Environnement"
+    },
+    {
+      "theme": "Divertissement",
+      "question": "Quel réalisateur est derrière le film 'Inception'?",
+      "reponses_fausses": ["Quentin Tarantino", "Steven Spielberg", "James Cameron"],
+      "reponse_correcte": "Christopher Nolan",
+      "indice": "Cinéma"
+    },
+    {
+      "theme": "Sport",
+      "question": "Quelle équipe a remporté la Coupe du monde de football en 2014?",
+      "reponses_fausses": ["Brésil", "Argentine", "France"],
+      "reponse_correcte": "Allemagne",
+      "indice": "Football"
+    },
+    {
+      "theme": "Géographie",
+      "question": "Dans quel pays se trouve la ville de Medellín?",
+      "reponses_fausses": ["Mexique", "Brésil", "Argentine"],
+      "reponse_correcte": "Colombie",
+      "indice": "Villes"
+    },
+    {
+      "theme": "Histoire",
+      "question": "Quelle guerre a eu lieu de 1914 à 1918?",
+      "reponses_fausses": ["Guerre de Cent Ans", "Guerre de Sécession", "Seconde Guerre mondiale"],
+      "reponse_correcte": "Première Guerre mondiale",
+      "indice": "Guerres"
+    },
+    {
+      "theme": "Sciences",
+      "question": "Quel est le nom du premier Homme à effectuer un voyage réussi dans l’espace ?",
+      "reponses_fausses": ["Guerman Titov", "Buzz Aldrin", "Neil Armstrong"],
+      "reponse_correcte": "Youri Gargarine",
+      "indice": "Astronomie"
+    },
+    {
+      "theme": "Divertissement",
+      "question": "Qui est l'auteur du livre '1984'?",
+      "reponses_fausses": ["Aldous Huxley", "F. Scott Fitzgerald", "J.D. Salinger"],
+      "reponse_correcte": "George Orwell",
+      "indice": "Littérature"
+    },
+    {
+      "theme": "Sport",
+      "question": "Combien de joueurs forment une équipe de rugby à XV?",
+      "reponses_fausses": ["11", "13", "16"],
+      "reponse_correcte": "15",
+      "indice": "Rugby"
+    },
+    {
+      "theme": "Géographie",
+      "question": "Combien de fleuves la France compte-t-elle ?",
+      "reponses_fausses": ["8", "10", "3"],
+      "reponse_correcte": "5",
+      "indice": "Fleuves"
+    },
+    {
+      "theme": "Histoire",
+      "question": "Quelle est la date de la Révolution française?",
+      "reponses_fausses": ["1492", "1776", "1848"],
+      "reponse_correcte": "1789",
+      "indice": "Révolutions"
+    },
+    {
+      "theme": "Sciences",
+      "question": "Quel est l’inverse d’une dépression en météorologie ?",
+      "reponses_fausses": ["Une pression", "Une convection", "Une averse"],
+      "reponse_correcte": "Un anticyclone",
+      "indice": "Météo"
+    },
+    {
+      "theme": "Divertissement",
+      "question": "Dans quel film Leonardo DiCaprio prononce-t-il la phrase 'Je suis le roi du monde'?",
+      "reponses_fausses": ["Inception", "The Revenant", "Shutter Island"],
+      "reponse_correcte": "Titanic",
+      "indice": "Films"
+    },
+    {
+      "theme": "Sport",
+      "question": "Où ont eu lieu les premiers JO d’hiver en 1924 ?",
+      "reponses_fausses": ["Saint-Moritz", "Lake Placid", "Garmisch"],
+      "reponse_correcte": "Chamonix",
+      "indice": "Hiver"
+    },
+    {
+      "theme": "Géographie",
+      "question": "Dans quel pays peut-on observer une armée de soldats en terre cuite?",
+      "reponses_fausses": ["Japon", "Thaïlande", "Corée du Sud"],
+      "reponse_correcte": "Chine",
+      "indice": "Statues"
+    },
+    {
+      "theme": "Histoire",
+      "question": "Quel empereur a dirigé la France au début du 19e siècle?",
+      "reponses_fausses": ["Louis XIV", "Charles de Gaulle", "Henri IV"],
+      "reponse_correcte": "Napoléon Bonaparte",
+      "indice": "Empereurs"
+    },
+    {
+      "theme": "Sciences",
+      "question": "Quel est le plus petit os du corps humain?",
+      "reponses_fausses": ["Cubitus", "Fémur", "Scapula"],
+      "reponse_correcte": "Étrier",
+      "indice": "Anatomie"
+    },
+    {
+      "theme": "Divertissement",
+      "question": "Qui a écrit la chanson 'Imagine'?",
+      "reponses_fausses": ["Elton John", "Bob Dylan", "Mick Jagger"],
+      "reponse_correcte": "John Lennon",
+      "indice": "Musique"
+    },
+    {
+      "theme": "Sport",
+      "question": "Dans quel sport utilise-t-on une crosse?",
+      "reponses_fausses": ["Basketball", "Football", "Tennis"],
+      "reponse_correcte": "Hockey",
+      "indice": "Équipements"
+    },
+    {
+      "theme": "Géographie",
+      "question": "Quelle est la capitale du Japon?",
+      "reponses_fausses": ["Kyoto", "Osaka", "Hiroshima"],
+      "reponse_correcte": "Tokyo",
+      "indice": "Asie"
+    },
+    {
+      "theme": "Histoire",
+      "question": "Quel pharaon a commandé la construction de la grande pyramide de Gizeh?",
+      "reponses_fausses": ["Ramsès II", "Thoutmôsis III", "Akhénaton"],
+      "reponse_correcte": "Khéops",
+      "indice": "Égypte"
+    },
+    {
+      "theme": "Sciences",
+      "question": "Quelle est la formule chimique de l'eau?",
+      "reponses_fausses": ["CO2", "O3", "NH3"],
+      "reponse_correcte": "H2O",
+      "indice": "Chimie"
+    },
+    {
+      "theme": "Divertissement",
+      "question": "Dans quel jeu vidéo affronte-t-on le méchant Bowser?",
+      "reponses_fausses": ["Zelda", "Fortnite", "Halo"],
+      "reponse_correcte": "Super Mario",
+      "indice": "Jeux vidéo"
+    },
+    {
+      "theme": "Sport",
+      "question": "Qui a remporté le Tour de France en 2020?",
+      "reponses_fausses": ["Egan Bernal", "Chris Froome", "Vincenzo Nibali"],
+      "reponse_correcte": "Tadej Pogacar",
+      "indice": "Cyclisme"
+    },
+    {
+      "theme": "Géographie",
+      "question": "Quel est l'océan le plus grand du monde?",
+      "reponses_fausses": ["Atlantique", "Indien", "Arctique"],
+      "reponse_correcte": "Pacifique",
+      "indice": "Océans"
+    },
+    {
+      "theme": "Histoire",
+      "question": "Comment est nommé le premier homme véritable de la lignée humaine ?",
+      "reponses_fausses": ["Homo erectus", "Homo sapiens", "Homo néandertalis"],
+      "reponse_correcte": "Homo habilis",
+      "indice": "Droits civiques"
+    },
+    {
+      "theme": "Sciences",
+      "question": "Qui est le père de la théorie de la relativité?",
+      "reponses_fausses": ["Isaac Newton", "Galilée", "Niels Bohr"],
+      "reponse_correcte": "Albert Einstein",
+      "indice": "Physique"
+    },
+    {
+      "theme": "Divertissement",
+      "question": "Quel acteur est également le réalisateur du film “La Fureur du dragon” ?",
+      "reponses_fausses": ["Jackie Chan", "Jet Li", "Jean-Claude Van Damme"],
+      "reponse_correcte": "Bruce Lee",
+      "indice": "Célébrités"
+    },
+    {
+      "theme": "Sport",
+      "question": "Quel sport est associé à Wimbledon?",
+      "reponses_fausses": ["Football", "Basketball", "Golf"],
+      "reponse_correcte": "Tennis",
+      "indice": "Compétitions"
     }
   ]
 }
