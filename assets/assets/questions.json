@@ -395,7 +395,7 @@
     {
       "theme": "Histoire",
       "question": "Quel empereur japonais a annoncé la reddition du Japon en 1945?",
-      "reponses_fausses": ["Meiji", "Taisho", "Hirohito"],
+      "reponses_fausses": ["Meiji", "Taisho", "Ito"],
       "reponse_correcte": "Hirohito",
       "indice": "Guerre"
     },
