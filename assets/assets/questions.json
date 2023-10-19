@@ -472,7 +472,7 @@
     {
       "theme": "Sciences",
       "question": "De quel atome provient le carbone 14 utilisé en datation?",
-      "reponses_fausses": ["Hélium", "Azote", "Oxygène"],
+      "reponses_fausses": ["Hélium", "Hydrogène", "Oxygène"],
       "reponse_correcte": "Azote",
       "indice": "Radioactivité"
     },
