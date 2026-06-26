@@ -145,6 +145,17 @@ canvas{position:fixed;inset:0;display:block;width:100%;height:100%}
 .t-icon{font-size:20px}.t-ttl{font-size:10px;font-weight:700;color:rgba(255,255,255,.42);text-transform:uppercase;letter-spacing:.06em}.t-msg{font-size:13px;font-weight:700}
 .pup-toast{position:fixed;bottom:120px;left:50%;transform:translateX(-50%);z-index:45;font-size:19px;font-weight:800;color:#fff;text-shadow:0 0 18px rgba(255,255,255,.6),0 2px 8px rgba(0,0,0,.8);pointer-events:none;white-space:nowrap;animation:pFly 1.5s ease-out both}
 @keyframes pFly{0%{transform:translateX(-50%) translateY(18px) scale(.6);opacity:0}30%{transform:translateX(-50%) translateY(0) scale(1.05);opacity:1}80%{transform:translateX(-50%) translateY(0) scale(1);opacity:1}100%{transform:translateX(-50%) translateY(-28px) scale(.9);opacity:0}}
+
+.diff-wrap{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);border-radius:11px;padding:12px 14px}
+.diff-lbl{font-size:11px;font-weight:700;color:rgba(255,255,255,.45);text-transform:uppercase;letter-spacing:.07em;margin-bottom:8px}
+.diff-btns{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}
+.dbtn{padding:9px 4px;font-size:12px;font-weight:700;background:rgba(255,255,255,.06);color:rgba(255,255,255,.45);border:1px solid rgba(255,255,255,.1);border-radius:8px;cursor:pointer;transition:all .15s;text-align:center}
+.dbtn:active{transform:scale(.95)}
+.dbtn.act[data-diff="easy"]{background:rgba(76,175,80,.2);color:#A5D6A7;border-color:rgba(76,175,80,.5)}
+.dbtn.act[data-diff="normal"]{background:rgba(30,136,229,.2);color:#90CAF9;border-color:rgba(30,136,229,.5)}
+.dbtn.act[data-diff="hard"]{background:rgba(255,152,0,.2);color:#FFCC80;border-color:rgba(255,152,0,.5)}
+.dbtn.act[data-diff="expert"]{background:rgba(229,57,53,.2);color:#EF9A9A;border-color:rgba(229,57,53,.5)}
+.diff-hint{font-size:11px;color:rgba(255,255,255,.38);text-align:center;margin-top:6px;min-height:16px}
 .hidden{display:none!important}
 .modal::-webkit-scrollbar{width:4px}.modal::-webkit-scrollbar-track{background:transparent}.modal::-webkit-scrollbar-thumb{background:rgba(255,255,255,.18);border-radius:2px}
 @supports(padding:env(safe-area-inset-top)){#hud{height:calc(52px + max(0px,env(safe-area-inset-top)));padding-top:max(4px,env(safe-area-inset-top))}#shoot-wrap{bottom:max(22px,env(safe-area-inset-bottom))}}
@@ -235,6 +246,16 @@ canvas{position:fixed;inset:0;display:block;width:100%;height:100%}
     <div class="irow"><span>⚽ Total buts</span><strong id="s-goals">0</strong></div>
     <div class="irow"><span>🪙 Total pièces</span><strong id="s-tcoins">0</strong></div>
   </div>
+  <div class="diff-wrap">
+    <div class="diff-lbl">Difficulté</div>
+    <div class="diff-btns">
+      <button class="dbtn" data-diff="easy">😊 Facile</button>
+      <button class="dbtn" data-diff="normal">⚽ Normal</button>
+      <button class="dbtn" data-diff="hard">🔥 Difficile</button>
+      <button class="dbtn" data-diff="expert">💀 Expert</button>
+    </div>
+    <div class="diff-hint" id="diff-hint"></div>
+  </div>
   <button class="bdanger" id="btn-reset">🗑 Réinitialiser</button>
   <button class="bs" id="btn-close-settings">✕ Fermer</button>
 </div></div></div>
@@ -293,7 +314,7 @@ function pickCards(n=3){
 // ═══════════════════════════════════════════════════════════════
 const Storage=(()=>{
   const KEY='ls_v4';
-  const DEF={highScore:0,totalGoals:0,totalCoins:0,coins:0,upgrades:{speed:0,shootPower:0,ballControl:0,coinChance:0},settings:{sound:true,vibration:true},achievements:{firstGoal:false,level10:false,coins100:false,goals50:false},missions:{goals3:{prog:0,done:false},coins20:{prog:0,done:false},noSprint:{done:false}},lastDaily:null};
+  const DEF={highScore:0,totalGoals:0,totalCoins:0,coins:0,difficulty:"normal",upgrades:{speed:0,shootPower:0,ballControl:0,coinChance:0},settings:{sound:true,vibration:true},achievements:{firstGoal:false,level10:false,coins100:false,goals50:false},missions:{goals3:{prog:0,done:false},coins20:{prog:0,done:false},noSprint:{done:false}},lastDaily:null};
   const clone=o=>JSON.parse(JSON.stringify(o));
   function merge(b,o){for(const k in o){if(k in b&&typeof b[k]==='object'&&b[k]!==null&&!Array.isArray(b[k]))merge(b[k],o[k]);else if(k in b)b[k]=o[k];}return b;}
   return{load(){try{const r=localStorage.getItem(KEY);return r?merge(clone(DEF),JSON.parse(r)):clone(DEF);}catch{return clone(DEF);}},save(d){try{localStorage.setItem(KEY,JSON.stringify(d));}catch{}},reset(){try{localStorage.removeItem(KEY);}catch{}}};
@@ -581,6 +602,8 @@ class Game{
     }
   }
 
+  _diffMult(){const m={easy:.62,normal:1,hard:1.38,expert:1.82};return m[this.data.difficulty||'normal'];}
+  _gkReactMult(){const m={easy:2.4,normal:1,hard:.62,expert:.38};return m[this.data.difficulty||'normal'];}
   togglePause(){
     if(this.state==='playing'){this.state='paused';document.getElementById('spause').classList.remove('hidden');}
     else if(this.state==='paused'){this.state='playing';document.getElementById('spause').classList.add('hidden');}
@@ -757,7 +780,7 @@ class Game{
         if(tToGoal>0&&tToGoal<3){
           const lobReducer=b.isLob?.5:1;
           gk.predictedX=b.x+b.vx*tToGoal*lobReducer;
-          const reaction=.14*(1+gk.reflexMalus);gk.reactTimer=reaction;
+          const reaction=.14*(1+gk.reflexMalus)*this._gkReactMult();gk.reactTimer=reaction;
         }
       }
       gk.vx*=Math.pow(.04,dt);gk.x+=gk.vx*dt;
@@ -784,7 +807,7 @@ class Game{
   _updateDefs(dt){
     const p=this.px,lv=this.level,lvMul=1+(lv-1)*.07;
     for(const d of this.defs){
-      const spd=Math.min(d.baseSpd*lvMul,d.baseSpd*2.2);
+      const spd=Math.min(d.baseSpd*lvMul*this._diffMult(),d.baseSpd*2.2*this._diffMult());
       const tx=p.x+p.vx*d.pred,ty=p.y+p.vy*d.pred;
       const dx=tx-d.x,dy=ty-d.y,dist=Math.hypot(dx,dy);
       let tvx=0,tvy=0;
@@ -1163,6 +1186,18 @@ class Game{
   _buildSettings(){
     document.getElementById('tog-sound').checked=this.data.settings.sound;document.getElementById('tog-vib').checked=this.data.settings.vibration;
     document.getElementById('s-rec').textContent=this.data.highScore;document.getElementById('s-goals').textContent=this.data.totalGoals;document.getElementById('s-tcoins').textContent=this.data.totalCoins;
+    const cur=this.data.difficulty||'normal';
+    const hints={easy:'😊 Défenseurs lents, gardien endormi — idéal pour apprendre',normal:'⚽ Équilibré — l'expérience recommandée',hard:'🔥 Défenseurs rapides, gardien réactif — un vrai défi',expert:'💀 Défenseurs ultra-rapides — pour les pros'};
+    document.getElementById('diff-hint').textContent=hints[cur];
+    document.querySelectorAll('.dbtn').forEach(btn=>{
+      const d=btn.dataset.diff;
+      btn.classList.toggle('act',d===cur);
+      btn.onclick=()=>{
+        this.data.difficulty=d;Storage.save(this.data);
+        document.querySelectorAll('.dbtn').forEach(b=>b.classList.toggle('act',b.dataset.diff===d));
+        document.getElementById('diff-hint').textContent=hints[d];
+      };
+    });
   }
 
   _buildLB(){
